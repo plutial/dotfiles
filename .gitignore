@@ -12,3 +12,7 @@ user-dirs.dirs/*
 pulse/*     
 user-dirs.locale/*
 yay/*
+
+QtProject.conf
+user-dirs.dirs
+user-dirs.locale
