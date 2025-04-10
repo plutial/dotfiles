@@ -1,3 +1,6 @@
+# Wifi
+alias wifi="nmtui"
+
 # Editor
 export EDITOR="nvim"
 export VISUAL="nvim"
@@ -34,6 +37,7 @@ export FZF_DEFAULT_COMMAND='rg --files --hidden --follow -g "!{.git,node_modules
 
 # Keepassxc
 export QT_QPA_PLATFORM="wayland"
+#export QT_QPA_PLATFORM="xcb"
 
 # Zinit
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
