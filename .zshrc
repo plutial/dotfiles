@@ -35,9 +35,9 @@ export FZF_DEFAULT_OPTS="\
 --color=marker:#8ec07c,spinner:#cc241d,header:#fabd2f"
 export FZF_DEFAULT_COMMAND='rg --files --hidden --follow -g "!{.git,node_modules}/*" 2> /dev/null'
 
-# Keepassxc
-export QT_QPA_PLATFORM="wayland"
-#export QT_QPA_PLATFORM="xcb"
+# Pacman
+alias pc="sudo pacman --verbose --color=always"
+#alias pc="sudo pacman --verbose --debug --color=always"
 
 # Zinit
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
