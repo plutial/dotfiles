@@ -1,6 +1,9 @@
 # Wifi
 alias wifi="nmtui"
 
+# Git through tor
+alias git="proxychains git"
+
 # Editor
 export EDITOR="nvim"
 export VISUAL="nvim"
