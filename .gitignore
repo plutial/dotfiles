@@ -14,5 +14,6 @@ user-dirs.locale/*
 yay/*
 
 QtProject.conf
+pavucontrol.ini
 user-dirs.dirs
 user-dirs.locale
