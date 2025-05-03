@@ -1,22 +1,13 @@
-aseprite/* 
-BraveSoftware/*
-dconf/*     
-go/*
-gtk-3.0/*  
-gtk-4.0/*
-keepassxc/*  
-nautilus/*
-QtProject.conf/*
-torbrowser/*
-systemd/*         
-user-dirs.dirs/*    
-pulse/*     
-user-dirs.locale/*
-yay/*
+# Ignore everything
+*
 
-.gsd-keyboard.settings-ported
-.zcompdump
-QtProject.conf
-pavucontrol.ini
-user-dirs.dirs
-user-dirs.locale
+# Except these files
+!bat
+!ghostty
+!hypr
+!nvim
+!tmux
+!wofi
+
+# Even if they are in subdirectories
+#!*/

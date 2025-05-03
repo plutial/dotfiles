@@ -4,6 +4,9 @@ alias wifi="nmtui"
 # Git through tor
 alias git="proxychains git"
 
+# Go Path
+export GOPATH="$HOME/.go"
+
 # Editor
 export EDITOR="nvim"
 export VISUAL="nvim"
