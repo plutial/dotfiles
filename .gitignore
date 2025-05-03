@@ -2,6 +2,7 @@
 *
 
 # Except these files
+!.zshrc
 !bat
 !ghostty
 !hypr
