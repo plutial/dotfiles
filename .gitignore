@@ -9,6 +9,7 @@
 !nvim
 !tmux
 !wofi
+!dunst
 
 # Even if they are in subdirectories
 #!*/

@@ -1,6 +1,9 @@
 # Wifi
 alias wifi="nmtui"
 
+# Change loading to X11
+export XDG_SESSION_TYPE=x11
+
 # Git through tor
 alias git="proxychains git"
 
