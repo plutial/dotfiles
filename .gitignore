@@ -3,13 +3,27 @@
 
 # Except these files
 !.zshrc
-!bat
-!ghostty
-!hypr
-!nvim
-!tmux
-!wofi
-!dunst
 
-# Even if they are in subdirectories
-#!*/
+!bat
+!bat/*
+
+!ghostty
+!ghostty/*
+
+!hypr
+!hypr/*
+
+!nvim
+!nvim/*
+
+!tmux
+!tmux/*
+
+!wofi
+!wofi/*
+
+!waybar
+!waybar/*
+
+!dunst
+!dunst/*

@@ -1,0 +1,38 @@
+{
+    "layer": "top",
+    "position": "top",
+    // "width": 1280,
+
+    // Modules
+    "modules-left": ["custom/music"],
+    "modules-center": ["clock"],
+    "modules-right": ["pulseaudio", "backlight", "battery"],
+
+    "custom/music": {
+        "format": " {}",
+        "escape": true,
+        "interval": 5,
+        "tooltip": false,
+        "exec": "playerctl metadata --format='{{ title }}'",
+        "on-click": "playerctl play-pause",
+        "max-length": 50
+    },
+
+    "clock": {
+        "format": "{:%OI:%M %p}",
+        "format-alt": "{:%d/%m/%Y}",
+    },
+
+    "backlight": {
+        "format": "Brightness {percent}%",
+    },
+
+    "battery": {
+        "format": "Battery {capacity}%",
+    },
+
+    "pulseaudio": {
+        "format": "Volume {volume}%",
+        "on-click": "pavucontrol",
+    },
+}

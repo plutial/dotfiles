@@ -1,0 +1,14 @@
+* {
+    font-family: MartianMono Nerd Font Mono;
+    font-size: 13px;
+    font-weight: bold;
+    color: #ebdbb2;
+    min-height: 0px;
+    padding: 5px 10px 0px 10px;
+}
+
+#waybar {
+    background: transparent;
+    color: @text;
+    margin: 0px 0px;
+}
