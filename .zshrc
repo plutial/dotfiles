@@ -1,7 +1,7 @@
 # Wifi
 alias wifi="nmtui"
 
-# Change loading to X11
+# XDG
 export XDG_SESSION_TYPE=x11
 
 # Git through tor
@@ -45,8 +45,16 @@ export FZF_DEFAULT_OPTS="\
 export FZF_DEFAULT_COMMAND='rg --files --hidden --follow -g "!{.git,node_modules}/*" 2> /dev/null'
 
 # Pacman
-alias pc="sudo pacman --verbose --color=always"
-#alias pc="sudo pacman --verbose --debug --color=always"
+alias pacman="pacman --verbose --color=always"
+
+# Yazi
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	yazi "$@" --cwd-file="$tmp"
+	IFS= read -r -d '' cwd < "$tmp"
+	[ -n "$cwd" ] && [ "$cwd" != "$PWD" ] && builtin cd -- "$cwd"
+	rm -f -- "$tmp"
+}
 
 # Zinit
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
