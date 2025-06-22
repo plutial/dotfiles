@@ -18,9 +18,14 @@ return {
                     case_mode = "smart_case",
                 },
             },
-        })
 
-        -- require("telescope").load_extension("fzf")
+            defaults = {
+                mappings = {
+                    i = {
+                    },
+                },
+            },
+        })
 
         local builtin = require('telescope.builtin')
         vim.keymap.set('n', '<leader>pf', builtin.find_files)
