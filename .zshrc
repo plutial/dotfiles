@@ -50,8 +50,9 @@ export FZF_DEFAULT_OPTS="\
 --color=marker:#8ec07c,spinner:#cc241d,header:#fabd2f"
 export FZF_DEFAULT_COMMAND='rg --files --hidden --follow -g "!{.git,node_modules}/*" 2> /dev/null'
 
-# Pacman
+# Pacman and Yay
 alias sudopacman="sudo pacman --verbose --color=always"
+alias sudoyay="sudo yay --verbose --color=always"
 
 # Yazi
 function y() {
