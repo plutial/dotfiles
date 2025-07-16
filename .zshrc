@@ -1,3 +1,6 @@
+# Update
+alias updateall="sudopacman -Syyu; flatpak update;"
+
 # Wifi
 alias wifi="nmtui"
 
