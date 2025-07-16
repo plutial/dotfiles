@@ -29,6 +29,8 @@
 
     "battery": {
         "format": "Battery {capacity}%",
+        "format-charging": "Charging {capacity}%",
+        "format-plugged": "Plugged {capacity}%",
     },
 
     "pulseaudio": {

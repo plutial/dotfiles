@@ -5,7 +5,7 @@ alias wifi="nmtui"
 export XDG_SESSION_TYPE=x11
 
 # Git through tor
-alias git="oniux git"
+# alias git="oniux git"
 
 # Go Path
 export GOPATH="$HOME/.go"
@@ -17,8 +17,8 @@ alias golings=$HOME/.go/bin/golings
 alias oniux=$HOME/.cargo/bin/oniux
 
 # Editor
-export EDITOR="nvim"
-export VISUAL="nvim"
+export EDITOR=nvim
+export VISUAL=nvim
 
 alias vi="nvim"
 alias vim="nvim"
@@ -52,6 +52,7 @@ export FZF_DEFAULT_COMMAND='rg --files --hidden --follow -g "!{.git,node_modules
 
 # Pacman and Yay
 alias sudopacman="sudo pacman --verbose --color=always"
+alias yay="yay --verbose --color=always"
 alias sudoyay="sudo yay --verbose --color=always"
 
 # Yazi
