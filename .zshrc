@@ -16,9 +16,6 @@ export GOPATH="$HOME/.go"
 # Golings
 alias golings=$HOME/.go/bin/golings
 
-# Rust Cargo
-alias oniux=$HOME/.cargo/bin/oniux
-
 # Editor
 export EDITOR=nvim
 export VISUAL=nvim
