@@ -1,14 +1,11 @@
 # Update
-alias updateall="sudopacman -Syyu; flatpak update;"
+alias updateall="sudo pacman -Syyu --color=always --noconfirm; flatpak update;"
 
 # Wifi
 alias wifi="nmtui"
 
 # XDG
-export XDG_SESSION_TYPE=x11
-
-# Git through tor
-# alias git="oniux git"
+# export XDG_SESSION_TYPE=x11
 
 # Go Path
 export GOPATH="$HOME/.go"

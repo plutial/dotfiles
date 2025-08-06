@@ -1,5 +1,5 @@
 * {
-    font-family: MartianMono Nerd Font Mono;
+    font-family: MartianMono Nerd Font;
     font-size: 12px;
     font-weight: bold;
     color: #ebdbb2;
@@ -11,4 +11,8 @@
     background: transparent;
     color: @text;
     margin: 0px 0px;
+}
+
+#network {
+    font-size: 14px;
 }

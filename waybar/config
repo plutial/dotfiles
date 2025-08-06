@@ -1,12 +1,14 @@
 {
     "layer": "top",
     "position": "top",
-    // "width": 1280,
+
+    "margin-top": -4,
+    "margin-bottom": -12,
 
     // Modules
     "modules-left": ["custom/music"],
     "modules-center": ["clock"],
-    "modules-right": ["pulseaudio", "backlight", "battery"],
+    "modules-right": ["network", "pulseaudio", "backlight", "battery", "memory"],
 
     "custom/music": {
         "format": " {}",
@@ -23,18 +25,79 @@
         "format-alt": "{:%d/%m/%Y}",
     },
 
-    "backlight": {
-        "format": "Brightness {percent}%",
-    },
-
-    "battery": {
-        "format": "Battery {capacity}%",
-        "format-charging": "Charging {capacity}%",
-        "format-plugged": "Plugged {capacity}%",
+    "network": {
+        "format-wifi": "{icon}",
+        "format-ethernet": "",
+        "format-disconnected": "󰌙",
+        "format-icons": [
+            "󰤯",
+            "󰤟",
+            "󰤢",
+            "󰤢",
+            "󰤨"
+        ]
     },
 
     "pulseaudio": {
-        "format": "Volume {volume}%",
         "on-click": "pavucontrol",
+        "max-volume": 150,
+        "scroll-step": 10,
+        "format": "{icon} {volume}%",
+        "format-muted": " {volume}%",
+        "format-icons": {
+            "default": [
+                "",
+            "",
+            "",
+            ]
+        },
+    },
+
+    "backlight": {
+        "format": "{icon} {percent}%",
+        "format-icons": [
+            "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+        ],
+    },
+
+    "battery": {
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 20
+        },
+        "format": "{icon} {capacity}%",
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
+        "format-alt": "{time} {icon}",
+        "format-icons": [
+            "󰂎",
+        "󰁺",
+        "󰁻",
+        "󰁼",
+        "󰁽",
+        "󰁾",
+        "󰁿",
+        "󰂀",
+        "󰂁",
+        "󰂂",
+        "󰁹"
+        ]
+    },
+
+    "memory": {
+        "interval": 10,
+        "format": "RAM {percentage}%",
+        "max-length": 10,
+        "tooltip": true,
+        "tooltip-format": "RAM - {used:0.1f}GiB used"
     },
 }
