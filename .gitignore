@@ -7,6 +7,9 @@
 !bat
 !bat/*
 
+!dunst
+!dunst/*
+
 !ghostty
 !ghostty/*
 
@@ -25,5 +28,5 @@
 !waybar
 !waybar/*
 
-!dunst
-!dunst/*
+!zsh
+!zsh/*
