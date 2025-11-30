@@ -10,7 +10,7 @@ zinit light zdharma-continuum/fast-syntax-highlighting
 # Autocompletes previous commands
 zinit light zsh-users/zsh-autosuggestions
 
-bindkey '^y' autosuggest-accept
+bindkey '^ ' autosuggest-accept
 
 # Previous and next suggestions
 bindkey '^k' history-search-backward
