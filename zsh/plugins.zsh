@@ -7,14 +7,18 @@ source "${ZINIT_HOME}/zinit.zsh"
 # Syntax highlighting
 zinit light zdharma-continuum/fast-syntax-highlighting
 
-# Autocompletes previous commands
-zinit light zsh-users/zsh-autosuggestions
-
-bindkey '^ ' autosuggest-accept
+# Accepts auto complete
+bindkey '^Y' autosuggest-accept
 
 # Previous and next suggestions
-bindkey '^k' history-search-backward
-bindkey '^j' history-search-forward
+bindkey '^K' history-search-backward
+bindkey '^J' history-search-forward
+
+bindkey '^[[A' history-search-backward
+bindkey '^[[B' history-search-forward
+
+# Autocompletes previous commands
+zinit light zsh-users/zsh-autosuggestions
 
 # What does this do? 
 zinit load zdharma-continuum/history-search-multi-word

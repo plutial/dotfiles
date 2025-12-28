@@ -1,32 +1,15 @@
 # Ignore everything
-*
+/*
 
 # Except these files
-!.zshrc
+!.gitignore
 
-!bat
-!bat/*
-
-!dunst
-!dunst/*
-
-!ghostty
-!ghostty/*
-
-!hypr
-!hypr/*
-
-!nvim
-!nvim/*
-
-!tmux
-!tmux/*
-
-!wofi
-!wofi/*
-
-!waybar
-!waybar/*
-
-!zsh
-!zsh/*
+!bat/
+!dunst/
+!ghostty/
+!hypr/
+!nvim/
+!tmux/
+!wofi/
+!waybar/
+!zsh/
