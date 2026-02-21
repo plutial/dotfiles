@@ -46,3 +46,5 @@ font-family = MartianMono Nerd Font
 font-size = 16
 
 gtk-titlebar = false
+
+maximize = true
