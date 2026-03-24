@@ -1,2 +1,2 @@
-eval "$(zoxide init fish)"
+zoxide init fish | source
 alias cd="z "
