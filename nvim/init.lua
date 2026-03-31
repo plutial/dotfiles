@@ -1,1 +1,3 @@
-require("plutial")
+require("settings")
+require("keybinds")
+require("plugins/init")

@@ -1,1 +1,1 @@
-alias sudo="run0 "
+alias sudo="sudo "

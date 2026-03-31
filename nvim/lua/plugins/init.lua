@@ -1,0 +1,8 @@
+require("plugins/theme")
+require("plugins/telescope")
+require("plugins/undotree")
+require("plugins/lualine")
+require("plugins/formatter")
+require("plugins/linter")
+require("plugins/lsp")
+require("plugins/copilot")
